@@ -10,5 +10,10 @@ func main() {
 	// fmt.Println(card)
 
 	cards := newDeck()
-	cards.print()
+
+	hand, remainingCards := deal(cards, 5)
+
+	hand.print()
+
+	remainingCards.print()
 }
