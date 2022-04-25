@@ -17,9 +17,13 @@ func main() {
 
 	// remainingCards.print()
 
-	cards := newDeck()
-	cards.saveToFile("my_cards")
+	// cards := newDeck()
+	// cards.saveToFile("my_cards")
 
-	newCards := newDeckFromFile("my_cards")
-	newCards.print()
+	// newCards := newDeckFromFile("my_cards")
+	// newCards.print()
+
+	cards := newDeck()
+	cards.shuffle()
+	cards.print()
 }
